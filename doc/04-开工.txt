@@ -1,0 +1,35 @@
+搭建软件环境 
+	vs code，Atom，Hbuilder
+	Chrome，FF
+	Nodejs（安装稳定版）
+	git或SVN
+	喜欢的美术软件，安装即可
+	
+	把以上常用软件全部备份到U盘或硬盘
+
+
+搭建项目环境
+	1. 安装yarn
+		npm i yarn -g
+	   使用yarn global bin 查看全局安装目录
+		把目录路径，复制到系统环境变量path中
+	
+	2. 创建项目
+		2.1 安装vue3.X脚手架
+			yarn global add @vue/cli
+		2.2 使用脚手架创建项目
+			vue create 项目名
+		2.3 启动项目
+			cd xx   yarn serve
+	
+	3. 搭建项目目录
+		assets  静态
+			imgs
+			fonts
+		pages  所有页面组件存放的文件夹
+		components 公共组件
+		api   所有请求接口
+		utils 工具	
+			
+	4. 开始搭建路由
+	5. 从静态页面开始书写，写完静态，调试接口

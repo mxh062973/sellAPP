@@ -1,0 +1,28 @@
+1. 在项目src下，新建store.js
+    书写store基本配置，写一个测试数据即可
+
+2. 在main.js中，引入store.js中暴露的store实例，注册
+    new Vue({
+        ...
+        store   //注册
+    })
+
+3. 在组件中使用store的数据
+    computed: {
+        name(){
+            return this.$store.state.name
+        }
+    }
+
+    //this.$store指向的就是刚才暴露的store实例对象
+
+    如果想改变状态？
+    先思考，这次改变状态需不需要发送请求
+    如果要发， 写action
+    如果不发请求， 写mutation 
+
+    触发action
+    this.$store.dispatch()
+
+    触发muatation
+    this.$store.commit()
